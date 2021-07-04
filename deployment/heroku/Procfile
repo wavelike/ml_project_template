@@ -1,0 +1,2 @@
+//web: cd deployment && gunicorn prediction_service_flask:app
+web: uvicorn prediction_service_fastapi:app --host=0.0.0.0 --port=${PORT:-5000}

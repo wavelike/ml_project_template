@@ -1,0 +1,36 @@
+# pycharm files
+.idea
+.idea/*
+.DS_Store
+
+# data objects
+data/data/*
+data/serialised_models/*
+output/*
+
+# caches
+.mypy_cache
+.pytest_cache
+__pycache__/*
+*/__pycache__/*
+
+### terraform
+# Local .terraform directories
+**/.terraform/*
+.terraform*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+### mlflow
+data/mlruns
+data/mlflow.db
+
+# data files
+*.png
+*.svg
+*.tsv
+*.pyc
+*.json
+*.coverage

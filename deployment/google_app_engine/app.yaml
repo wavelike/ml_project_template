@@ -1,0 +1,6 @@
+runtime: python37
+instance_class: F4_1G
+entrypoint: gunicorn -b :$PORT main:app
+#entrypoint: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
+#entrypoint: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
+#entrypoint: gunicorn -k uvicorn.workers.UvicornWorker main:app

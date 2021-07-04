@@ -26,23 +26,13 @@ Each of these cases utilises a collection of pipeline components (see *code arch
 
 Since this codebase is used as a template, you are free to paste functionality from whatever algorithmic framework you want to use, be it scikit-learn, TensorFlow, PyTorch, Xgboost, Catboost, Lightgbm or anything else.
 
-**use cases**
+ML functionality:
 - full ML pipeline tasks: data ingestion and preprocessing, model training and optimisation, model selection via a leaderboard and model artifact export
 - usage of exported ML pipeline artifact for prediction on batch or instance-level data
-- local deployment of the model pipeline via REST APIs (flask or fastapi)
-- cloud deployment of the model pipeline via various services:
-    - aws sagemaker
-    - aws lambda
-    - google cloud function
-    - google app engine
-    - heroku
-- ML drift monitoring via evidently
 - experiment tracking and model registry management via MLflow
+- feature engineering    
+    - This template suggests a consistent interface for feature engineering processes, that allows to unit test each engineering process and reuse the same code for local development and server-based production.
     
-**feature engineering**
-
-This template suggests a consistent interface for feature engineering processes, that allows to unit test each engineering process and reuse the same code for local development and server-based production.
-Features are also easily storable in a feature store and reloadable once they are created (TODO)
 
 ## Machine Learning Engineering
 
@@ -53,6 +43,7 @@ Among these best practices you will find:
 - package and environment management via Pipenv
 - containerisation of prediction services via docker
 - infrastructure setup via terraform
+- local deployment of the model pipeline via REST APIs (flask or fastapi)
 - deployment of code and model artifacts to various services: AWS Lambda, AWS Sagemaker, Google Cloud function, Google App Engine, Heroku
 - code testing via pytest
 - runtime logging 
@@ -87,6 +78,8 @@ In addition to the terms introduced above, I use the following names for denotin
 
 ## Project structure
 
+The following directories and files are part of the project:
+
     ml_project_template: project root, to be renamed according to your project's title
     -d data: storage directory for (small) datasets and model artifacts
     -d deployment: specific functionalities for various api frameworks and cloud providers
@@ -107,11 +100,8 @@ In addition to the terms introduced above, I use the following names for denotin
  
 # Projects
 
-While the vanilla codebase is using a simple ML pipeline with a random forest model, the following repositories contain more sophisticated model pipelines, all based on this very template:
-- A
-- B
-
-
+While the vanilla codebase is using a simple ML pipeline with a random forest model, the following repositories contain specialised model pipelines, all based on this very template:
+- TODO
 
 # Deployment
 

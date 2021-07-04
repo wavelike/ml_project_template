@@ -4,9 +4,7 @@
 .DS_Store
 
 # data objects
-data/data/*
-data/serialised_models/*
-output/*
+output/
 
 # caches
 .mypy_cache

@@ -10,6 +10,7 @@ pipenv run mypy ./
 #pipenv run black ./
 
 # running pytest with test coverage, combine coverage results and create report. Clean up afterwards
+echo "Running tests with code coverage"
 pipenv run coverage run --module pytest --ignore=deployment # deployment tests require the prediction endpoint to be deployed to each cloud service to be successful, so ignore until the endpoint is permanently available
 pipenv run coverage combine
 pipenv run coverage report

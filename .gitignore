@@ -13,6 +13,7 @@ output/*
 .pytest_cache
 __pycache__/*
 */__pycache__/*
+*.pyc
 
 ### terraform
 # Local .terraform directories
@@ -28,9 +29,6 @@ data/mlruns
 data/mlflow.db
 
 # data files
-*.png
-*.svg
 *.tsv
-*.pyc
 *.json
 *.coverage
